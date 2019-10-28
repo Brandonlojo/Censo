@@ -16,11 +16,13 @@ class FormularioDomicilioSimple inherits FormularioDomicilio{
 	
 	method cantidadHabitantes()= personas.size()
 	method tieneComputadora()= artefactos.any({artefacto=>artefacto=="computadora"})
-	method algunoEsUniversitario()= personas.any({persona=>persona.esUniversitario})
+	method algunoEsUniversitario()= personas.any({persona=>persona.tieneEstudiosUniversitarios()})
 	
 	method sonDeClaseMedia(){
-	if(estiloDeConstruccion == "material" && personas.forEach({persona=>persona.esDeClaseMedia()})
-	
+	if(estiloDeConstruccion == "material" && self.algunoEsUniversitario() && sefl.tieneComputadora())
+	{return true}
+	else 
+	{return false}	
 }
 
 class FormularioDomicilioEspecial inherits FormularioDomicilio{
