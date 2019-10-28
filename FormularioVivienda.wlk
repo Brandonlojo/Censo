@@ -10,7 +10,7 @@ class FormularioDomicilio {
 }
 
 class FormularioDomicilioSimple inherits FormularioDomicilio{
-	var property personas
+	var property personas=[]
 	var property cantidadAmbientes
 	var property artefactos
 	
