@@ -4,18 +4,19 @@ import Localidad.*
 
 
 class Censistas {
-	var property domiciliosDeLocalidad = new Localidad()
+	var property unaLocalidad = new Localidad() //es una lista de domicilios
+	var formaDeCensar
 	
+	method establecerFormaDeCensar(una_forma){
+	formaDeCensar = una_forma  // referencia a una clase que tiene los comportamientos de minutos segun el tipo de persona(profesor, voluntario, etc)
+	}
 	
 	method poblacionTotalDeLocalidad(){
-		return domiciliosDeLocalidad.realizarConteo()
+		return unaLocalidad.realizarConteo()
 	}
 	
 	//esto es responsabilidad de la clase localidad  
 	//var property domicilios=[new FormularioDomicilio()]
 	//method realizarConteo()= domicilios.sum({domicilio=>domicilio.cantidadOcupantes()})
 	
-	method locMenorA500(){listaDeDomicilios.filter({})}//esto no va, crear clase localidad que tenga una lista de domicilios(formulariosDomicilios)
-	
-
 }
