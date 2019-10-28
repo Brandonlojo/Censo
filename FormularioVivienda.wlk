@@ -21,7 +21,9 @@ class FormularioViviendaSimple inherits FormularioVivienda{
 class FormularioViviendaEspecial inherits FormularioVivienda{
 	var property tipoDeVivienda
 	var property superficie
-	var property cantidadOcupantes
+	var cantidadOcupantes
+	
+	method cantidadOcupantes(una_cantidad){cantidadOcupantes = una_cantidad}
 	
 	method cantidadHabitantes()=cantidadOcupantes
 	
