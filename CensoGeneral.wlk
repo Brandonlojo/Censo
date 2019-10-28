@@ -5,7 +5,7 @@ class CensoGeneral {
 	
 	method poblacionTotalPais(){listaDeCensistas.sum({censista=>censista.poblacionTotalDeLocalidad(})}
 	
-	method localidadesMenoresA500(){listaDeCensistas.filter({censista=>censista.poblacionTotalDeLocalidad()<500}).forEach(censista=>censista.unaLocalidad()}
+	method localidadesMenoresA500(){listaDeCensistas.filter({censista=>censista.poblacionTotalDeLocalidad()<500}).map(censista=>censista.unaLocalidad()}
 	
 	
 }
