@@ -1,7 +1,7 @@
 import FormularioPersona.*
 
 
-class FormularioVivienda {
+class FormularioDomicilio {
 	var property localidad
 	var property estiloDeConstruccion
 	
@@ -9,7 +9,7 @@ class FormularioVivienda {
 	
 }
 
-class FormularioViviendaSimple inherits FormularioVivienda{
+class FormularioDomicilioSimple inherits FormularioDomicilio{
 	var property personas
 	var property cantidadAmbientes
 	var property artefactos
@@ -18,7 +18,7 @@ class FormularioViviendaSimple inherits FormularioVivienda{
 	
 }
 
-class FormularioViviendaEspecial inherits FormularioVivienda{
+class FormularioDomicilioEspecial inherits FormularioDomicilio{
 	var property tipoDeVivienda
 	var property superficie
 	var cantidadOcupantes
