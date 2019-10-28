@@ -15,8 +15,11 @@ class FormularioDomicilioSimple inherits FormularioDomicilio{
 	var property artefactos
 	
 	method cantidadHabitantes()= personas.size()
+	method tieneComputadora()= artefactos.any({artefacto=>artefacto=="computadora"})
+	method algunoEsUniversitario()= personas.any({persona=>persona.esUniversitario})
 	
-	method sonDeClaseMedia(){personas.forEach({persona=>persona.esDeClaseMedia()})
+	method sonDeClaseMedia(){
+	if(estiloDeConstruccion == "material" && personas.forEach({persona=>persona.esDeClaseMedia()})
 	
 }
 
