@@ -4,7 +4,7 @@ import Localidad.*
 
 
 class Censistas {
-	var property domiciliosDeLocalidad
+	var property domiciliosDeLocalidad = new Localidad()
 	
 	
 	method poblacionTotalDeLocalidad(){
