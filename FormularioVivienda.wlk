@@ -16,6 +16,8 @@ class FormularioDomicilioSimple inherits FormularioDomicilio{
 	
 	method cantidadHabitantes()= personas.size()
 	
+	method sonDeClaseMedia(){personas.forEach({persona=>persona.esDeClaseMedia()})
+	
 }
 
 class FormularioDomicilioEspecial inherits FormularioDomicilio{
