@@ -18,5 +18,5 @@ class FormularioExtendido inherits FormularioPersona{
 	
 	method esTrabajador()= self.esMayor() && estaTrabajando== true
 	
-	override method requisitoDeClaseMedia()= self.esTrabajador()
+	override method requisitoDeClaseMedia()= self.esTrabajador() || self.tieneEstudiosUniversitarios()
 }
