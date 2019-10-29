@@ -20,3 +20,11 @@ class Censistas {
 	//method realizarConteo()= domicilios.sum({domicilio=>domicilio.cantidadOcupantes()})
 	
 }
+
+class Localidad {
+	var property domicilios
+
+	method realizarConteo()= domicilios.sum({domicilio=>domicilio.cantidadOcupantes()})
+	
+	method cantidadDePersonasClaseMedia()= domicilios.filter({domicilio=>domicilio.requisitoClaseMedia()})
+}
