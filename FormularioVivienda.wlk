@@ -35,4 +35,11 @@ class FormularioDomicilioEspecial inherits FormularioDomicilio{
 	
 	method cantidadHabitantes()=cantidadOcupantes
 	
-	}
+	method esViviendaDeClaseMedia()= tipoDeVivienda =="hotel" || tipoDeVivienda == "geriátrico"
+	
+	override method sonDeClaseMedia(){
+	if(estiloDeConstruccion == "material" && superficie > 100 && self.esViviendaDeClaseMedia())
+	{return true}
+	else 
+	{return false}	
+}
