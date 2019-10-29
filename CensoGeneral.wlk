@@ -8,5 +8,9 @@ class CensoGeneral {
 	method localidadesMenoresA500(){
 	 return listaDeCensistas.filter({censista=>censista.poblacionTotalDeLocalidad()<500}).map(censista=>censista.unaLocalidad()}
 	
+	method cantidadTotalDeClaseMedia(){listaDeCensistas.sum({censista=>censista.})}
 	
+	method porcentajeTotalDeClaseMedia(){
+	return 
+	}
 }
