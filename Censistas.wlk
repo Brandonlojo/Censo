@@ -15,7 +15,7 @@ class Censistas {
 		return unaLocalidad.realizarConteo()
 	}
 	
-	method poblacionTotalDeClaseMedia(){
+	method poblacionTotalDeClaseMediaDeLocalidad(){
 		return unaLocalidad.cantidadDePersonasClaseMedia()
 	}
 	
