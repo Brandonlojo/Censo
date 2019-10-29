@@ -5,7 +5,7 @@ class FormularioDomicilio {
 	var property localidad
 	var property estiloDeConstruccion
 	
-	method algunoCumpleRequisito()= personas.any({persona=>persona.requisitoDeClaseMedia()})
+	
 	
 	
 }
@@ -17,6 +17,7 @@ class FormularioDomicilioSimple inherits FormularioDomicilio{
 	
 	method cantidadHabitantes()= personas.size()
 	method tieneComputadora()= artefactos.any({artefacto=>artefacto=="computadora"})
+	method algunoCumpleRequisito()= personas.any({persona=>persona.requisitoDeClaseMedia()})
 	
 	
 	method sonDeClaseMedia(){
