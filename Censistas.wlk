@@ -15,9 +15,9 @@ class Censistas {
 		return unaLocalidad.realizarConteo()
 	}
 	
-	//esto es responsabilidad de la clase localidad  
-	//var property domicilios=[new FormularioDomicilio()]
-	//method realizarConteo()= domicilios.sum({domicilio=>domicilio.cantidadOcupantes()})
+	method poblacionTotalDeClaseMedia(){
+		return unaLocalidad.cantidadDePersonasClaseMedia()
+	}
 	
 }
 
