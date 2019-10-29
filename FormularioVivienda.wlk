@@ -12,7 +12,7 @@ class FormularioDomicilioSimple inherits FormularioDomicilio{
 	var property cantidadAmbientes
 	var property artefactos
 	
-	method cantidadHabitantes()= personas.size()
+	method cantidadOcupantes()= personas.size()
 	method tieneComputadora()= artefactos.any({artefacto=>artefacto=="computadora"})
 	method algunoCumpleRequisito()= personas.any({persona=>persona.requisitoDeClaseMedia()})
 	
