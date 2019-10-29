@@ -7,12 +7,16 @@ class FormularioPersona {
 	
 	method tieneEstudiosUniversitarios()= self.esMayor() && nivelEstudio == "universitario"
 	
+	method requisitoDeClaseMedia()= self.tieneEstudioUniversitario()
 }
 
 
 
 class FormularioExtendido inherits FormularioPersona{
-	var property estadoLaboral
+	var property estaTrabajando
 	var property tipoDeDescendencia
 	
+	method esTrabajador()= self.esMayor() && estaTrabajando== true
+	
+	override method requisitoDeClaseMedia()= self.esTrabajador()
 }
