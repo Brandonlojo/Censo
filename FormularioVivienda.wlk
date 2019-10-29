@@ -5,9 +5,6 @@ class FormularioDomicilio {
 	var property localidad
 	var property estiloDeConstruccion
 	
-	
-	
-	
 }
 
 class FormularioDomicilioSimple inherits FormularioDomicilio{
