@@ -26,5 +26,5 @@ class Localidad {
 
 	method realizarConteo()= domicilios.sum({domicilio=>domicilio.cantidadOcupantes()})
 	
-	method cantidadDePersonasClaseMedia()= domicilios.filter({domicilio=>domicilio.requisitoClaseMedia()})
+	method cantidadDePersonasClaseMedia()= domicilios.filter({domicilio=>domicilio.esDeClaseMedia()}).sum({domicilio=>domicilio.cantidadOcupantes()})
 }
