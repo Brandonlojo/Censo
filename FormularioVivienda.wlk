@@ -17,7 +17,7 @@ class FormularioDomicilioSimple inherits FormularioDomicilio{
 	method algunoCumpleRequisito()= personas.any({persona=>persona.requisitoDeClaseMedia()})
 	
 	
-	method sonDeClaseMedia(){
+	method esDeClaseMedia(){
 	if(estiloDeConstruccion == "material" && self.algunoCumpleRequisito() && sefl.tieneComputadora())
 	{return true}
 	else 
@@ -35,7 +35,7 @@ class FormularioDomicilioEspecial inherits FormularioDomicilio{
 	
 	method esViviendaDeClaseMedia()= tipoDeVivienda =="hotel" || tipoDeVivienda == "geriátrico"
 	
-	override method sonDeClaseMedia(){
+	method esDeClaseMedia(){
 	if(estiloDeConstruccion == "material" && superficie > 100 && self.esViviendaDeClaseMedia())
 	{return true}
 	else 
